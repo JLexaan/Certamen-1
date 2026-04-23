@@ -2,22 +2,25 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Portafolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Jhoan Parra Muñoz</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
     <header>
-        <div class="logo">JP</div>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Logo JP" width="36" height="36" onerror="this.style.display='none'">
+            JP
+        </div>
         <nav>
-            <a href="#">Sobre mí</a>
-            <a href="#">Habilidades</a>
-            <a href="#">Proyectos</a>
-            <a href="#">Contacto</a>
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
         </nav>
     </header>
-
-    <section class="hero">
+ 
+    <section class="hero" id="inicio">
         <div class="texto">
             <h1>Hola, soy <span>Jhoan Parra Muñoz</span></h1>
             <h2>Estudiante de Desarrollo Web</h2>
@@ -25,12 +28,53 @@
                 Me gusta crear páginas web modernas y simples.
                 Actualmente estoy aprendiendo programación y diseño web.
             </p>
+            <a href="#proyectos" class="btn">Ver mis proyectos</a>
         </div>
-
         <div class="imagen">
-            <img src="assets/perfil.png" alt="Foto de perfil">
+            <img src="assets/perfil.png" alt="Foto de perfil de Jhoan Parra" width="220" height="220">
         </div>
     </section>
-
+ 
+    <main>
+        <section id="sobre-mi">
+            <div class="seccion-titulo">
+                <h2>Sobre Mí</h2>
+                <p class="subtitulo">Conóceme un poco más</p>
+            </div>
+            <div class="sobre-mi-contenido">
+                <article class="sobre-mi-texto">
+                    <p>
+                        <strong>Mi nombre es Jhoan Parra Muñoz</strong> y soy estudiante de
+                        desarrollo web en Talcahuano, Chile. Desde que descubrí la programación,
+                        me apasiona crear sitios que sean funcionales y visualmente atractivos.
+                    </p>
+                    <p>
+                        Actualmente me encuentro aprendiendo <em>HTML5, CSS3 y JavaScript</em>,
+                        con el objetivo de convertirme en un desarrollador front-end profesional.
+                        Me gusta trabajar en equipo y aprender nuevas tecnologías cada día.
+                    </p>
+                    <blockquote>
+                        «El único modo de hacer un gran trabajo es amar lo que haces.»
+                        — <em>Steve Jobs</em>
+                    </blockquote>
+                    <h3>Mis intereses</h3>
+                    <ul>
+                        <li>Diseño web y UI/UX</li>
+                        <li>Desarrollo front-end</li>
+                        <li>Tecnología y videojuegos</li>
+                        <li>Fotografía digital</li>
+                    </ul>
+                </article>
+ 
+                <aside class="datos-personales">
+                    <h3>Datos Personales</h3>
+                    <p><strong>Edad:</strong> 20 años</p>
+                    <p><strong>Ciudad:</strong> Talcahuano, Chile</p>
+                    <p><strong>Email:</strong> jhoanp633@gmail.com</p>
+                    <p><strong>Carrera:</strong> Programación Web</p>
+                    <p><strong>Intereses:</strong> Diseño UI/UX, Gaming</p>
+                </aside>
+            </div>
+        </section>
 </body>
 </html>
