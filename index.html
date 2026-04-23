@@ -7,74 +7,198 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo JP" width="36" height="36" onerror="this.style.display='none'">
-            JP
+
+<header>
+    <div class="logo">
+        <img src="assets/logo.png" alt="Logo JP" width="36" height="36">
+        JP
+    </div>
+    <nav>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+</header>
+
+<section class="hero" id="inicio">
+    <div class="texto">
+        <h1>Hola, soy <span>Jhoan Parra Muñoz</span></h1>
+        <h2>Estudiante de Desarrollo Web</h2>
+        <p>Me gusta crear páginas web modernas y simples.</p>
+        <a href="#proyectos" class="btn">Ver mis proyectos</a>
+    </div>
+    <div class="imagen">
+        <img src="assets/logo.png" alt="Logo JP" width="220" height="220">
+    </div>
+</section>
+
+<main>
+
+<section id="sobre-mi">
+    <div class="seccion-titulo">
+        <h2>Sobre Mí</h2>
+        <p class="subtitulo">Conóceme un poco más</p>
+    </div>
+
+    <div class="sobre-mi-contenido">
+        <article class="sobre-mi-texto">
+            <p><strong>Mi nombre es Jhoan Parra Muñoz</strong> y soy estudiante de desarrollo web en Talcahuano, Chile.</p>
+
+            <p>Actualmente estoy aprendiendo HTML, CSS y JavaScript para convertirme en desarrollador front-end.</p>
+
+            <blockquote>
+                "Aprender a programar es aprender a crear soluciones."
+            </blockquote>
+
+            <h3>Mis intereses</h3>
+            <ul>
+                <li>Diseño web y UI/UX</li>
+                <li>Desarrollo front-end</li>
+                <li>Tecnología</li>
+                <li>Videojuegos</li>
+            </ul>
+        </article>
+
+        <aside class="datos-personales">
+            <h3>Datos Personales</h3>
+            <p><strong>Edad:</strong> 20 años</p>
+            <p><strong>Ciudad:</strong> Talcahuano, Chile</p>
+            <p><strong>Email:</strong> jhoanp633@gmail.com</p>
+            <p><strong>Carrera:</strong> Programación Web</p>
+        </aside>
+    </div>
+</section>
+
+<section id="habilidades" class="bg-gris">
+    <div class="seccion-titulo">
+        <h2>Habilidades</h2>
+        <p class="subtitulo">Tecnologías y competencias</p>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Tecnología</th>
+                <th>Nivel</th>
+                <th>Dominio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML5</td>
+                <td>Avanzado</td>
+                <td><div class="barra"><div class="progreso p85"></div></div></td>
+            </tr>
+            <tr>
+                <td>CSS3</td>
+                <td>Intermedio</td>
+                <td><div class="barra"><div class="progreso p70"></div></div></td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Intermedio</td>
+                <td><div class="barra"><div class="progreso p55"></div></div></td>
+            </tr>
+        </tbody>
+    </table>
+</section>
+
+<section id="proyectos">
+    <div class="seccion-titulo">
+        <h2>Proyectos</h2>
+    </div>
+
+    <div class="proyectos-grid">
+
+        <figure class="proyecto-card">
+            <img src="assets/proyecto1.png" alt="Proyecto 1" width="300" height="180">
+            <figcaption>
+                <h3>Landing Page Moderna</h3>
+                <p>Diseño responsivo con Flexbox.</p>
+                <blockquote>Proyecto enfocado en experiencia de usuario.</blockquote>
+                <a href="https://github.com/JLexaan" target="_blank">Ver repositorio</a>
+            </figcaption>
+        </figure>
+
+        <figure class="proyecto-card">
+            <img src="assets/proyecto2.png" alt="Proyecto 2" width="300" height="180">
+            <figcaption>
+                <h3>Blog Personal</h3>
+                <p>Sitio web adaptable con HTML semántico.</p>
+                <a href="https://github.com/JLexaan" target="_blank">Ver repositorio</a>
+            </figcaption>
+        </figure>
+
+    </div>
+
+    <aside class="nota-proyectos">
+        <p>Todos los proyectos fueron desarrollados como práctica.</p>
+    </aside>
+</section>
+
+<section id="contacto" class="bg-gris">
+    <div class="seccion-titulo">
+        <h2>Contacto</h2>
+    </div>
+
+    <div class="contacto-contenido">
+        <form class="formulario">
+
+            <input type="text" name="nombre" placeholder="Nombre" required minlength="3">
+
+            <input type="email" name="email" placeholder="Correo" required>
+
+            <select required>
+                <option value="">Selecciona un asunto</option>
+                <option>Trabajo</option>
+                <option>Proyecto</option>
+            </select>
+
+            <textarea required minlength="10" placeholder="Mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <aside class="info-contacto">
+            <h3>Información</h3>
+            <p>jhoanp633@gmail.com</p>
+            <p>Talcahuano, Chile</p>
+            <p>+56 9 2057 1211</p>
+            <p><a href="https://github.com/JLexaan" target="_blank">github.com/JLexaan</a></p>
+        </aside>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="footer-contenido">
+
+        <div class="footer-logo">
+            <span class="logo-icono">JP</span>
+            Jhoan Parra Muñoz
         </div>
-        <nav>
-            <a href="#sobre-mi">Sobre mí</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
- 
-    <section class="hero" id="inicio">
-        <div class="texto">
-            <h1>Hola, soy <span>Jhoan Parra Muñoz</span></h1>
-            <h2>Estudiante de Desarrollo Web</h2>
-            <p>
-                Me gusta crear páginas web modernas y simples.
-                Actualmente estoy aprendiendo programación y diseño web.
-            </p>
-            <a href="#proyectos" class="btn">Ver mis proyectos</a>
+
+        <div class="footer-redes">
+            <a href="https://github.com/JLexaan" target="_blank">
+                <img src="assets/github.png" width="30">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="assets/linkedin.png" width="30">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="assets/x.png" width="30">
+            </a>
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="assets/instagram.png" width="30">
+            </a>
         </div>
-        <div class="imagen">
-            <img src="assets/perfil.png" alt="Foto de perfil de Jhoan Parra" width="220" height="220">
-        </div>
-    </section>
- 
-    <main>
-        <section id="sobre-mi">
-            <div class="seccion-titulo">
-                <h2>Sobre Mí</h2>
-                <p class="subtitulo">Conóceme un poco más</p>
-            </div>
-            <div class="sobre-mi-contenido">
-                <article class="sobre-mi-texto">
-                    <p>
-                        <strong>Mi nombre es Jhoan Parra Muñoz</strong> y soy estudiante de
-                        desarrollo web en Talcahuano, Chile. Desde que descubrí la programación,
-                        me apasiona crear sitios que sean funcionales y visualmente atractivos.
-                    </p>
-                    <p>
-                        Actualmente me encuentro aprendiendo <em>HTML5, CSS3 y JavaScript</em>,
-                        con el objetivo de convertirme en un desarrollador front-end profesional.
-                        Me gusta trabajar en equipo y aprender nuevas tecnologías cada día.
-                    </p>
-                    <blockquote>
-                        «El único modo de hacer un gran trabajo es amar lo que haces.»
-                        — <em>Steve Jobs</em>
-                    </blockquote>
-                    <h3>Mis intereses</h3>
-                    <ul>
-                        <li>Diseño web y UI/UX</li>
-                        <li>Desarrollo front-end</li>
-                        <li>Tecnología y videojuegos</li>
-                        <li>Fotografía digital</li>
-                    </ul>
-                </article>
- 
-                <aside class="datos-personales">
-                    <h3>Datos Personales</h3>
-                    <p><strong>Edad:</strong> 20 años</p>
-                    <p><strong>Ciudad:</strong> Talcahuano, Chile</p>
-                    <p><strong>Email:</strong> jhoanp633@gmail.com</p>
-                    <p><strong>Carrera:</strong> Programación Web</p>
-                    <p><strong>Intereses:</strong> Diseño UI/UX, Gaming</p>
-                </aside>
-            </div>
-        </section>
+
+    </div>
+
+    <p class="footer-copy">© 2026 Jhoan Parra Muñoz</p>
+</footer>
+
 </body>
 </html>
